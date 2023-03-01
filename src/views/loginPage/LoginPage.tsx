@@ -47,8 +47,8 @@ const LoginPage: FC = () => {
             <div className="login-form__inner">
                 <div className="login-form__title"> Войти</div>
                 <div className="login-form__line">
-                    <div className="login-form__subtitle"> Логин </div>
-                    <input type="text"  ref={inputRef} value={email} placeholder="Ваш логин" className="login-form__input" onChange={(e) => setEmail(e.target.value)}/>
+                    <div className="login-form__subtitle"> E-mail </div>
+                    <input type="text"  ref={inputRef} value={email} placeholder="E-mail" className="login-form__input" onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div className="login-form__line">
                     <div className="login-form__subtitle"> Пароль</div>
