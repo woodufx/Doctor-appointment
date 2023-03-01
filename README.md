@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# A web application that allows patients to make an appointment with a doctor, indicating the symptoms that bother them, filling out a form and sending an application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo 
+https://drive.google.com/file/d/1_ez-VUOhdfjTiDWkKHp9L-ku3oE3O1vn/view?usp=sharing
 
-## Available Scripts
+### Task list
 
-In the project directory, you can run:
+- Create and design main page.
+- Сreate routing for the application.
+- Create appointment form and process it.
+- Connect firebase realtime database.
+- Create user sign-in and logout.
+- Create history page and admin page.
+- Test the system.
 
-### `npm start`
+###  Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- Redux Toolkit
+- Firebase Realtime Database
+- Typescript
+- SCSS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Install and run
 
-### `npm test`
+- `git clone https://github.com/woodufx/Doctor-appointment.git`
+- `npm i`
+- `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Login and password to test:
+Email: admin@admin.com
+Password: admin12345
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Good luck!
