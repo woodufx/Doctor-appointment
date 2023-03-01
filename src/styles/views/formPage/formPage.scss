@@ -1,0 +1,64 @@
+@import '../../variables';
+@import '../../mixins';
+
+.formPage {
+  &__inner {
+    padding: 0px 10vw;
+    @include column-left;
+    gap: 14px;
+  }
+  &__title {
+    margin-top: 40px;
+    font-size: 34px;
+    font-weight: 700;
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    @include secondary-title;
+    text-align: left;
+  }
+  &__sympthoms {
+    width: 100%;
+    @include column-center;
+    gap: 15px;
+  }
+  &__line {
+    width: 100%;
+    @include raw-center;
+  }
+  &__sympthom {
+    width: 7vw;
+    height: 7vw;
+    background-color: $additional-color;
+    border-radius: 50%;
+  }
+  &__datetime {
+    display: flex;
+    gap: 20px;
+  }
+  &__smalltext {
+    font-size: 16px;
+  }
+  &__contacts {
+    width: 100%;
+    @include column-left;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  &__contactliner {
+    width: 100;
+    display: flex;
+    gap: 24px;
+  }
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__inputLine {
+    @include column-left;
+  }
+}

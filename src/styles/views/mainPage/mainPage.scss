@@ -1,0 +1,123 @@
+@import '../../variables';
+@import '../../mixins';
+
+.mainPage {
+  margin-top: 60px;
+  @include column-center;
+  gap: 20px;
+  &__header {
+    position: relative;
+    width: 95vw;
+    background-color: $additional-color;
+    background-image: url('../../../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    box-shadow: 5px 4px 20px 1px rgba(34, 60, 80, 0.1);
+    background-position: right;
+    height: 37vh;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__text {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__title {
+    font-size: 52px;
+    font-weight: 700;
+    color: $main-color;
+    width: 30%;
+  }
+  &__description {
+    font-size: 28px;
+    font-weight: 500;
+    color: $main-color;
+    width: 50%;
+  }
+  img {
+    z-index: 1;
+    width: 25.5vh;
+    position: absolute;
+    right: 12vw;
+    bottom: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+  &__subtitle {
+    @include title;
+  }
+  &__roles {
+    @include raw-center;
+    gap: 40px;
+  }
+  &__role {
+    position: relative;
+    overflow: hidden;
+    @include column-all-center;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 40px;
+    background-color: $additional-color;
+    color: $main-color;
+    box-shadow: 5px 4px 20px 1px rgba(34, 60, 80, 0.1);
+    transition: all 0.1s ease-in;
+    &:last-child {
+      background-color: $second-additional-color;
+      color: $secondary-color;
+    }
+    &:hover {
+      color: white;
+      transform: scale(1.01);
+      filter: brightness(104%);
+      cursor: pointer;
+      transition: all 0.4s ease-in;
+    }
+    & img {
+      position: absolute;
+      width: 20vw;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      transition: all 0.5s ease-out; 
+    }
+  }
+  &__rolename {
+    z-index: 10;
+    width: 70%;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+  }
+  &__role:hover &__waveOrange{
+    left: 0;
+    bottom: 0;
+    transition: all 0.6s ease;
+  }
+  &__waveOrange {
+    left: -450px;
+    width: 185vw;
+    position: absolute;
+    transition: all 0.5s ease;
+    bottom: -800px;
+  }
+  &__role:hover &__waveBlue{
+    left: 0;
+    bottom: 0;
+    transition: all 0.6s ease;
+  }
+  &__role:hover img {
+    width: 23vw;
+    transition: all 1.5s ease; 
+  }
+  &__waveBlue {
+    left: -150px;
+    width: 85vw;
+    position: absolute;
+    transition: all 0.5s ease;
+    bottom: -750px;
+  }
+}

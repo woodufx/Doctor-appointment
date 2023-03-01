@@ -1,0 +1,9 @@
+.historyPage {
+  margin-top: 40px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

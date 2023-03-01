@@ -1,0 +1,64 @@
+@import '../../variables';
+@import '../../mixins';
+
+.login-form {
+  background-color: $additional-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner {
+      height: 370px;
+      width: 25vw;
+      padding: 50px 35px;
+      border-radius: 20px;
+      background-color: $secondary-white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 5px 4px 20px 1px rgba(34, 60, 80, 0.1);
+  }
+  &__title {
+      text-align: center;
+      color: $main-color;
+      font-size: 32px;
+      font-weight: 700;
+  }
+  &__line {
+      display: flex;
+      flex-direction: column;
+  }
+  &__subtitle  {
+      font-weight: 500;
+  }
+  &__input {
+      border: 2px solid $secondary-white; 
+      outline: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+  }
+  &__input:focus {
+      border: 2px solid $main-color;
+  }
+  &__button {
+      transition: all 0.15s linear;
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 24px;
+      font-weight: 500;
+      color: white;
+      background-color: $secondary-color;
+  }
+  &__button:hover {
+      transition: all 0.15s linear;
+      cursor: pointer;
+      background-color: $hover-secondary;
+  }
+}

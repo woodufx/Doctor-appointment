@@ -1,0 +1,27 @@
+.icon-wrapper {
+  position: relative;
+  padding: 0px 50px;
+  width: 80vw;
+}
+
+.icon-wrapper .anticon {
+  position: absolute;
+  top:  -12px;
+  width: 32px;
+  height: 32px;
+  color: #FAE1D5;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.icon-wrapper .icon-wrapper-active {
+  color: #F57955;
+}
+
+.icon-wrapper .anticon:first-child {
+  left: 0;
+}
+
+.icon-wrapper .anticon:last-child {
+  right: 0;
+}

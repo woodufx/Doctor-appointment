@@ -1,0 +1,49 @@
+@import '../../mixins';
+@import '../../variables';
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color;
+  padding: 20px 0;
+  &__inner {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    gap: 20px;
+  }
+  &__link {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $additional-color;
+      transition: all 0.2s ease;
+    }
+  }
+  &__right {
+    display: flex;
+    gap: 10px;
+    transition: all 0.2s ease;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      transition: all 0.2s ease;
+    }
+  }
+  &__text {
+    color: white;
+    font-weight: 600;
+  }
+  &__exit {
+    width: 32px;
+  }
+}

@@ -1,0 +1,37 @@
+@import 'variables';
+
+@mixin column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin column-all-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin raw-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin title {
+  font-size: 28px;
+  font-weight: 600;
+  color: $main-color;
+}
+@mixin secondary-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: $main-color;
+}
