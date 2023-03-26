@@ -26,7 +26,7 @@ const MainPage : FC = () => {
       </div>
       <div className="mainPage__roles">
         <div className="mainPage__role" onClick={() => navigate(PageRoutes.FORM_PAGE)}>
-          <p className="mainPage__rolename">Продолжить как пациент</p>
+          <p className="mainPage__rolename">Продолжить как настоящий пациент</p>
           <img src={blueParticles} className="mainPage__particles" alt="" />
           <svg className="mainPage__waveBlue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#AAD3E5" fillOpacity="1" d="M0,128L60,117.3C120,107,240,85,360,90.7C480,96,600,128,720,138.7C840,149,960,139,1080,122.7C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
